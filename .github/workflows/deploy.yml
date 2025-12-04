@@ -36,6 +36,7 @@ jobs:
         # - --batch-mode：非交互模式，适合 CI/CD 环境，防止因交互等待卡住流程
 
         env:
+          GITHUB_ACTOR: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # GitHub 会自动注入这个 token，授权你推送包到 GitHub Packages
           # settings.xml 中使用了 ${env.GITHUB_TOKEN} 作为认证密码
