@@ -34,5 +34,5 @@ public interface AuthConstants {
     /**
      * redis中用户信息的key
      */
-    String LOGIN_USER_INFO_KEY = "blog:login:userInfo:";
+    String LOGIN_USER_INFO_KEY_PREFIX = "blog:login:userInfo:";
 }
