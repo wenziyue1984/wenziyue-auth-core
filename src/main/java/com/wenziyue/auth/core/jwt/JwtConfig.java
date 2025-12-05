@@ -7,6 +7,7 @@ import lombok.Data;
  */
 @Data
 public class JwtConfig {
+
     /**
      * 签名秘钥
      */
@@ -15,5 +16,10 @@ public class JwtConfig {
     /**
      * 有效期，单位：秒
      */
-    private long expireSeconds;
+    private Long expireSeconds;
+
+    /**
+     * 还剩多少时间开始刷新token，单位：秒
+     */
+    private Long refreshBeforeExpirationSeconds;
 }
