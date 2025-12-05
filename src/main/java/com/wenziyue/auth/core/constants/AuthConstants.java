@@ -30,4 +30,9 @@ public interface AuthConstants {
      * token 前缀
      */
     String TOKEN_PREFIX = "Bearer ";
+
+    /**
+     * redis中用户信息的key
+     */
+    String LOGIN_USER_INFO_KEY = "blog:login:userInfo:";
 }

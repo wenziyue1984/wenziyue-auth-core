@@ -11,15 +11,15 @@ public class JwtConfig {
     /**
      * 签名秘钥
      */
-    private String jwtSecret;
+    public String jwtSecret;
 
     /**
      * 有效期，单位：秒
      */
-    private Long expireSeconds;
+    public Long expireSeconds;
 
     /**
      * 还剩多少时间开始刷新token，单位：秒
      */
-    private Long refreshBeforeExpirationSeconds;
+    public Long refreshBeforeExpirationSeconds;
 }
