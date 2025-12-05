@@ -1,5 +1,6 @@
 package com.wenziyue.auth.core.model;
 
+import com.wenziyue.auth.core.enums.UserStatusEnum;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -36,5 +37,5 @@ public class LoginUser implements Serializable {
     /**
      * 用户状态，例如 "NORMAL", "DISABLED"
      */
-    private String status;
+    private UserStatusEnum status;
 }
