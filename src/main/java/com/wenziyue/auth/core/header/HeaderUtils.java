@@ -19,7 +19,7 @@ public class HeaderUtils {
      * @param loginUser 用户信息
      * @return base64字符串
      */
-    public String serializeUserInfoToHeader(LoginUser loginUser) {
+    public static String serializeUserInfoToHeader(LoginUser loginUser) {
         if (loginUser == null) {
             return null;
         }
@@ -36,7 +36,7 @@ public class HeaderUtils {
      * @param base64UserInfo Base64编码的用户信息
      * @return LoginUser对象
      */
-    public LoginUser parseUserInfoFromHeader(String base64UserInfo) {
+    public static LoginUser parseUserInfoFromHeader(String base64UserInfo) {
         if (base64UserInfo == null || base64UserInfo.isEmpty()) {
             return null;
         }

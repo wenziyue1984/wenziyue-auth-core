@@ -35,4 +35,9 @@ public interface AuthConstants {
      * redis中用户信息的key
      */
     String LOGIN_USER_INFO_KEY_PREFIX = "blog:login:userInfo:";
+
+    /**
+     * 刷新token时返回的header头
+     */
+    String REFRESH_TOKEN_HEADER = "X-Refresh-Token";
 }
