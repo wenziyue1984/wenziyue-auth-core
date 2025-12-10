@@ -44,6 +44,12 @@ public interface AuthConstants {
     String LOGIN_USER_TOKEN_KEY_PREFIX = "blog:login:userToken:";
 
     /**
+     * 用户所有活跃的token集合
+     * 前缀 + userId
+     */
+    String LOGIN_USER_TOKENS_SET_KEY_PREFIX = "blog:login:userTokens:set:";
+
+    /**
      * 刷新token时返回的header头
      */
     String REFRESH_TOKEN_HEADER = "X-Refresh-Token";
