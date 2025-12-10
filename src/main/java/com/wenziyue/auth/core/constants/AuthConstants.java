@@ -33,8 +33,15 @@ public interface AuthConstants {
 
     /**
      * redis中用户信息的key
+     * 前缀 + userId
      */
     String LOGIN_USER_INFO_KEY_PREFIX = "blog:login:userInfo:";
+
+    /**
+     * redis中用户token的key
+     * 前缀 + token
+     */
+    String LOGIN_USER_TOKEN_KEY_PREFIX = "blog:login:userToken:";
 
     /**
      * 刷新token时返回的header头
