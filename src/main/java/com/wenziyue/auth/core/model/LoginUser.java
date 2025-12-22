@@ -4,7 +4,6 @@ import com.wenziyue.auth.core.enums.UserStatusEnum;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Set;
 
 /**
  * @author wenziyue
@@ -27,7 +26,7 @@ public class LoginUser implements Serializable {
     /**
      * 角色列表，例如 ["ROLE_ADMIN", "ROLE_USER"]
      */
-    private Set<String> roles;
+    private String roles;
 
     /**
      * 客户端标识，例如 "WEB", "APP", "ADMIN"
