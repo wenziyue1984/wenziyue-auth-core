@@ -15,4 +15,22 @@ public enum UserStatusEnum {
 
     private final Integer code;
     private final String desc;
+
+    public static UserStatusEnum getUserStatusByCode(Integer code) {
+        for (UserStatusEnum value : UserStatusEnum.values()) {
+            if (value.code.equals(code)) {
+                return value;
+            }
+        }
+        return null;
+    }
+
+    public static UserStatusEnum getUserStatusByDesc(String desc) {
+        for (UserStatusEnum value : UserStatusEnum.values()) {
+            if (value.desc.equals(desc)) {
+                return value;
+            }
+        }
+        return null;
+    }
 }

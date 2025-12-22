@@ -16,4 +16,22 @@ public enum UserRoleEnum {
     private final Integer code;
     private final String desc;
     private final String role;
+
+    public static UserRoleEnum getUserRoleByCode(Integer code) {
+        for (UserRoleEnum value : UserRoleEnum.values()) {
+            if (value.code.equals(code)) {
+                return value;
+            }
+        }
+        return null;
+    }
+
+    public static UserRoleEnum getUserRoleByDesc(String desc) {
+        for (UserRoleEnum value : UserRoleEnum.values()) {
+            if (value.desc.equals(desc)) {
+                return value;
+            }
+        }
+        return null;
+    }
 }

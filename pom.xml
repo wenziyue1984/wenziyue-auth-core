@@ -6,7 +6,7 @@
 
     <groupId>com.wenziyue</groupId>
     <artifactId>wenziyue-auth-core</artifactId>
-    <version>1.0.19</version>
+    <version>1.0.20</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -21,7 +21,7 @@
             <dependency>
                 <groupId>com.wenziyue</groupId>
                 <artifactId>wenziyue-bom</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.5</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
